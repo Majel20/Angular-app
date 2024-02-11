@@ -1,0 +1,32 @@
+<!-- <form class="card" [formGroup]="productform"> -->
+    <form class="card" [formGroup]="productform" (ngSubmit)="AddProduct()">
+
+    <div class="card-body">
+        <div class="row">
+            <div class="col-lg-2">
+                <div class="form-group">
+                    <label>Name </label>
+                    <input class="form-control" formControlName="name">
+                </div>
+
+            </div>
+            <div class="col-lg-2">
+                <div class="form-group">
+                    <label>Description </label>
+                    <input class="form-control" formControlName="description">
+                </div>
+
+            </div>
+            <div class="col-lg-2">
+                <div class="form-group">
+                    <br>
+                   <button type="submit" class="btn btn-primary">Add Product</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</form>
